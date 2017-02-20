@@ -1,0 +1,97 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.intro-section {
+    padding-top: 150px;
+    text-align: left;
+    background: #fff;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background: no-repeat center center;
+    background-image: linear-gradient(rgba(0, 81, 112, .75), rgba(0, 81, 112, .75)), url('../img/marketing-conteudo-header.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.intro-section h1 {
+    font-size: 5em;
+}
+.about-section {
+    height: 100%;
+    text-align: center;
+    background: #eee;
+}
+
+.services-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+.contact-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  max-height: 100%;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+.top-nav-collapse {
+    background-color: #D1D2D4;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+.card-compra {
+    height: 250px;
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background-color: #fff;
+    transform: translateY(-25px);
+}
+.cards-compra article {
+    padding-left: 0;
+    padding-right: 0;
+}
+.cards-compra article:nth-child(2) .card-compra {
+    /* background-color: #515151; */
+}
+/* .cards-compra .col-lg-4:nth-child(3) .card-compra {
+    background-color: #005170;
+} */
