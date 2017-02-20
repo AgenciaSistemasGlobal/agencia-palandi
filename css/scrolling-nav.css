@@ -1,6 +1,7 @@
 body {
     width: 100%;
     height: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 html {
@@ -18,6 +19,21 @@ html {
 
     .top-nav-collapse {
         padding: 0;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover,
+    .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+        color: #fff;
+        background-color: transparent;
+        border-color: #fff;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-nav>li>a {
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 
@@ -26,26 +42,32 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
-    padding-top: 150px;
-    text-align: left;
+    padding-top:150px;
+    text-align: center;
     background: #fff;
     color: #fff;
     width: 100%;
     height: 100%;
-    background: no-repeat center center;
-    background-image: linear-gradient(rgba(0, 81, 112, .75), rgba(0, 81, 112, .75)), url('../img/marketing-conteudo-header.jpg');
+    background-image: linear-gradient(to right, rgb(0, 81, 112), rgba(0, 81, 112, .3)), url('../img/marketing-conteudo-header.jpg');
+
+    background-position: 50% 0;
+    background-repeat: repeat;
+    background-attachment: fixed;
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
 .intro-section h1 {
-    font-size: 5em;
+    font-size: 66px;
+    text-transform: uppercase;
+    font-weight: 100;
 }
 .about-section {
     height: 100%;
     text-align: center;
-    background: #eee;
+    background: #D1D2D4;
 }
 
 .services-section {
@@ -59,39 +81,114 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #eee;
+    background: #D1D2D4;
 }
-
 .navbar-brand {
-  padding: 0px;
+    position: absolute;
+    left: 50%;
+    margin-left: -80px !important;  /* 50% of your logo width */
+    display: block;
+    padding: 0;
 }
 .navbar-brand>img {
   max-height: 100%;
 }
 .navbar-default {
     background-color: transparent;
-    border-color: transparent;
+    border: none;
 }
 .top-nav-collapse {
-    background-color: #D1D2D4;
+    background-color: #0F75BC;
+}
+.top-nav-collapse .navbar-brand {
+    margin: 5px auto;
 }
 .navbar-default .navbar-nav>li>a {
     color: #fff;
+    line-height: 16px;
+    border-bottom: solid 3px transparent;
+}
+.cards-compra {
+    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width: 100%;
+    float: left;
 }
 .card-compra {
     height: 250px;
     width: 100%;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     background-color: #fff;
-    transform: translateY(-25px);
 }
 .cards-compra article {
-    padding-left: 0;
-    padding-right: 0;
 }
 .cards-compra article:nth-child(2) .card-compra {
-    /* background-color: #515151; */
+    border-left: solid thin #eee;
+    border-right: solid thin #eee;
 }
-/* .cards-compra .col-lg-4:nth-child(3) .card-compra {
-    background-color: #005170;
-} */
+.btn {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    height: 45.6px;
+}
+.btn-transparent {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+}
+.btn-transparent:hover,
+.btn-transparent:focus {
+    background-color: rgba(255,255,255,.1);
+    color: #fff;
+}
+.btn-primary {
+    background-color: #0F75BC;
+}
+.all-services-format-logo {
+    padding: 45px;
+    height: 200px;
+}
+.services-format-logo {
+    border:solid 3px #fff;
+    border-radius: 6px;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+.services-format-logo i {
+    font-size:52px;
+    line-height: 60px;
+}
+.services-format-logo:after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: -26px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 28px solid #fff;
+    transform: rotate(25deg);
+}
+.services-format-desc {
+    padding: 10px;
+}
+.card-compra h2 {
+    text-align: left;
+    font-weight: 200;
+}
+.image-prdt-compra {
+    height: 100%;
+    background-color: #eee;
+    min-height: 250px;
+    width: 100%;
+    color: #fff;
+}
+.image-prdt-compra i {
+    font-size:52px;
+    line-height: 250px;
+}
