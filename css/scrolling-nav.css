@@ -18,7 +18,8 @@ html {
     }
 
     .top-nav-collapse {
-        padding: 0;
+        padding: 10px 0;
+        height: 70px;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     }
 
@@ -27,6 +28,10 @@ html {
         color: #fff;
         background-color: transparent;
         border-color: #fff;
+    }
+
+    .navbar-collapse .btn {
+        margin-left: 20px;
     }
 }
 
@@ -41,47 +46,49 @@ html {
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
 of those sections to manage the look and feel of the site. */
 
-.intro-section {
-    padding-top:150px;
-    text-align: center;
-    background: #fff;
-    color: #fff;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to right, rgb(0, 81, 112), rgba(0, 81, 112, .3)), url('../img/marketing-conteudo-header.jpg');
-
+.section-colored {
+    background-image: -webkit-linear-gradient(left, rgb(0, 81, 112), transparent), url('../img/marketing-conteudo-header.jpg');
+    background-image: -o-linear-gradient(left, rgb(0, 81, 112), transparent), url('../img/marketing-conteudo-header.jpg');
+    background-image: linear-gradient(to right, rgb(0, 81, 112), transparent), url('../img/marketing-conteudo-header.jpg');
     background-position: 50% 0;
     background-repeat: repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
+    min-height: 200px;
+    color: #fff;
+}
+.intro-section {
+    padding-top:200px;
+    text-align: center;
+    height: 800px;
 }
 .intro-section h1 {
     font-size: 66px;
     text-transform: uppercase;
     font-weight: 100;
+    border-bottom: solid thin rgba(255,255,255,.3);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
 }
 .about-section {
     height: 100%;
     text-align: center;
-    background: #D1D2D4;
+    background: #eee;
 }
 
 .services-section {
-    height: 100%;
-    padding-top: 150px;
     text-align: center;
     background: #fff;
 }
 
 .contact-section {
-    height: 100%;
-    padding-top: 150px;
     text-align: center;
-    background: #D1D2D4;
+    background: #eee;
 }
 .navbar-brand {
     position: absolute;
@@ -98,40 +105,26 @@ of those sections to manage the look and feel of the site. */
     border: none;
 }
 .top-nav-collapse {
-    background-color: #0F75BC;
-}
-.top-nav-collapse .navbar-brand {
-    margin: 5px auto;
+    background-color: rgba(0, 81, 112, .9);
 }
 .navbar-default .navbar-nav>li>a {
     color: #fff;
-    line-height: 16px;
+    line-height: initial;
     border-bottom: solid 3px transparent;
+    padding-bottom: 7px;
+    padding-top: 7px;
 }
-.cards-compra {
-    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    width: 100%;
-    float: left;
+.top-nav-collapse.navbar-default .navbar-nav>li>a {
+    padding-bottom: 30px;
+    padding-top: 11px;
 }
-.card-compra {
-    height: 250px;
-    width: 100%;
-    background-color: #fff;
-}
-.cards-compra article {
-}
-.cards-compra article:nth-child(2) .card-compra {
-    border-left: solid thin #eee;
-    border-right: solid thin #eee;
-}
-.btn {
+/* .btn {
     padding: 10px 16px;
     font-size: 18px;
     line-height: 1.3333333;
     border-radius: 6px;
     height: 45.6px;
-}
+} */
 .btn-transparent {
     color: #fff;
     background-color: transparent;
@@ -146,17 +139,18 @@ of those sections to manage the look and feel of the site. */
     background-color: #0F75BC;
 }
 .all-services-format-logo {
-    padding: 45px;
-    height: 200px;
+    padding: 30px 0;
+    float: left;
 }
 .services-format-logo {
-    border:solid 3px #fff;
+    border:solid 3px #005170;
     border-radius: 6px;
     width: 65px;
     height: 65px;
     text-align: center;
     position: relative;
     display: inline-block;
+    color: #005170;
 }
 .services-format-logo i {
     font-size:52px;
@@ -165,30 +159,279 @@ of those sections to manage the look and feel of the site. */
 .services-format-logo:after {
     content: '';
     position: absolute;
-    bottom: -8px;
-    right: -26px;
+    bottom: -9.5px;
+    right: -23px;
     width: 0;
     height: 0;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-left: 28px solid #fff;
-    transform: rotate(25deg);
+    border-left: 25px solid #005170;
+    transform: rotate(30deg);
 }
 .services-format-desc {
     padding: 10px;
-}
-.card-compra h2 {
-    text-align: left;
     font-weight: 200;
+    font-size: 22px;
 }
-.image-prdt-compra {
-    height: 100%;
+#compra-rapida {
+    height: auto;
+}
+.big-card {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    min-height: 300px;
+    padding: 30px;
+}
+.big-card:not(:first-child){
+    margin: 100px auto;
+}
+#compra-rapida .big-card:first-child {
+    margin-top: 30px;
+}
+.title-vertical {
+    padding-bottom: 100px;
+}
+section .title-fine {
+    font-weight: 100;
+    font-size: 56px;
+    margin: 0;
+    text-transform: capitalize;
+}
+.big-card .img-side {
     background-color: #eee;
-    min-height: 250px;
+    height: 500px;
+    position: absolute;
+    top: -63px;
+    left: -16px;
     width: 100%;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.big-card .img-side i {
+    font-size: 19vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: rgba(255, 255, 255, 1);
+    transform: rotate(25deg);
+}
+.big-card:nth-child(2) .img-side {
+    right: -17px;
+    left: initial;
+}
+.big-card:nth-child(2) .img-side i {
+    right: 0;
+    left: initial;
+}
+.big-card .desc-side {
+    text-align: left;
+}
+.big-card .desc-side h3 {
+    font-size: 38px;
+}
+
+.spinner {
+  width: 100px;
+}
+.spinner input {
+  text-align: right;
+}
+.input-group-btn-vertical {
+  position: relative;
+  white-space: nowrap;
+  width: 1%;
+  vertical-align: middle;
+  display: table-cell;
+}
+.input-group-btn-vertical > .btn {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+  padding: 8.2px 8px;
+  margin-left: -1px;
+  position: relative;
+  border-radius: 0;
+}
+.input-group-btn-vertical > .btn:first-child {
+  border-top-right-radius: 4px;
+}
+.input-group-btn-vertical > .btn:last-child {
+  margin-top: -2px;
+  border-bottom-right-radius: 4px;
+}
+.input-group-btn-vertical i{
+  position: absolute;
+  top: 0;
+  left: 4px;
+}
+.big-card .form-horizontal .control-label {
+    text-align: left;
+}
+.btn i.right {
+    margin-left: 6px;
+}
+.btn i.left {
+    margin-right: 6px;
+}
+.big-card h3 {
+    margin: 0;
+}
+.preco-card {
+    font-size: 42px;
+    font-weight: bold;
+}
+.big-card-actions {
+    padding-top: 30px;
+    float: left;
+    width: 100%;
+}
+.big-card-actions .btn {
+    margin-right: 15px;
+}
+footer {
+    background-color: #414141;
+    min-height: 400px;
+    color: #fff;
+    position: relative;
+}
+#pos-footer {
+    background-color: #313131;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    padding: 15px;
+}
+#newsletter {
     color: #fff;
 }
-.image-prdt-compra i {
-    font-size:52px;
-    line-height: 250px;
+#timeline {
+    list-style: none;
+    margin: 0 25px;
+}
+#timeline li {
+    text-align: right;
+    border-right: solid 3px #005170;
+    padding: 30px 50px;
+    position: relative;
+}
+#timeline li:after {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+
+    position: absolute;
+    right: -25px;
+    text-align: center;
+    top: 25px;
+    font-size: 20px;
+    line-height: 50px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background: #005170;
+    border-radius: 100%;
+}
+#timeline li:nth-child(1):after {
+    content: "\f000";
+}
+#timeline li:nth-child(2):after {
+    content: "\f072";
+}
+#timeline li:nth-child(3):after {
+    content: "\f076";
+}
+#timeline li:nth-child(4):after {
+    content: "\f19c";
+}
+.text-services {
+    padding: 30px;
+}
+section:not(.intro-section) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+#contact {
+    padding-bottom: 0;
+}
+#contact .big-card {
+    transform: translateY(30px);
+    padding: 0;
+}
+section#contact .title-vertical {
+    padding-bottom: 70px;
+}
+.right-side-contact {
+    height: 100%;
+    background-color: #005170;
+    min-height: 300px;
+    color: #fff;
+    padding: 30px;
+    text-align: left;
+    position: relative;
+}
+.right-side-contact:after {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    content: "\f086";
+    font-size: 19vw;
+    position: absolute;
+    bottom: -75px;
+    right: 5px;
+    color: rgba(255, 255, 255, .1);
+}
+.right-side-contact a {
+    color: #fff;
+}
+.right-side-contact .contact-info {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+.right-side-contact .contact-info li {
+    padding: 15px 0;
+}
+.right-side-contact .contact-info li i {
+    margin-right: 15px;
+    font-size: 20px;
+}
+.redes-info {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.redes-info li {
+    display: inline;
+}
+.redes-info li a {
+    padding: 15px;
+    border-radius: 2px;
+}
+.redes-info li:first-child a {
+    margin-left: -15px;
+}
+.redes-info li a:hover {
+    background-color: rgba(255,255,255,.1);
+}
+.redes-info li a i {
+    font-size: 20px;
+}
+.contact-form {
+    padding: 50px;
+}
+.contact-form textarea {
+    max-width: 100%;
+    height: 132px;
+    max-height: 132px;
+}
+.contact-form .send-mesnagem {
+    margin-top: 15px;
 }

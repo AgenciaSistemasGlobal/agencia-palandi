@@ -11,7 +11,10 @@
 
     <title>Agência Palandi - Marketing de Conte</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,400|Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,400" rel="stylesheet">
+    <script src="https://use.fontawesome.com/2c3e7d97ea.js"></script>
+
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -34,53 +37,66 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand page-scroll" href="#page-top">
-                <img src="img/logotipo-artigos-conteudo.png" alt="Marketing de Conteúdo Agência Palandi" class="img-responsive">
-            </a>
-        </div>
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <img src="img/logotipo-artigos-conteudo.png" alt="Marketing de Conteúdo Agência Palandi" class="img-responsive">
+                </a>
+            </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                <li class="hidden">
-                    <a class="page-scroll" href="#page-top"></a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#about">Sobre Nós</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#services">Serviços</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#services">Parcerias</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#services">Blog</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#services">Trabalhe Conosco</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contact">Contato</a>
-                </li>
-            </ul>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Sobre Nós</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Serviços</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Parcerias</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Blog</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Trabalhe Conosco</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contato</a>
+                    </li>
+                </ul>
+                <a href="" class="btn btn-transparent pull-right">Me Ligue Agora</a>
+                <a href="" class="btn btn-primary pull-right">Compra Rápida<i class="fa fa-shopping-cart right" aria-hidden="true"></i></a>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href=""><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.navbar-collapse -->
     </nav>
 
     <!-- Intro Section -->
-    <section id="intro" class="intro-section bgParallax" data-speed="4">
+    <section id="intro" class="section-colored intro-section" data-speed="4">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-10 col-lg-offset-1">
                     <h1>Mussum Ipsum, cacilds</h1>
                 </div>
             </div>
@@ -89,95 +105,17 @@
                     <p>Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris Casamentiss faiz malandris se pirulitá. Si num tem leite então bota uma pinga aí cumpadi! Per aumento de cachacis, eu reclamis.</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="all-services-format-logo">
-                    <div class="col-lg-4 text-right">
-                        <div class="services-format-logo">
-                            <i class="material-icons">&#xE873;</i>
-                        </div>
-                        <span class="services-format-desc">Artigos</span>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <div class="services-format-logo">
-                            <i class="material-icons">&#xE0BE;</i>
-                        </div>
-                        <span class="services-format-desc">E-mail</span>
-                    </div>
-                    <div class="col-lg-4 text-left">
-                        <div class="services-format-logo">
-                            <i class="material-icons">&#xE865;</i>
-                        </div>
-                        <span class="services-format-desc">Ebook</span>
-                    </div>
-                </div>
-            </div>
+            <br><br><br>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="row">
                         <div class="col-lg-6 text-right">
-                            <a class="btn btn-transparent form-control page-scroll" href="#about">Mussum Ipsum, cacilds!</a>
+                            <a class="btn btn-transparent page-scroll btn-lg" href="#about">Mussum Ipsum, cacilds!</a>
                         </div>
                         <div class="col-lg-6 text-left">
-                            <a class="btn btn-primary form-control page-scroll" href="#about">Mussum Ipsum, cacilds!</a>
+                            <a class="btn btn-primary page-scroll btn-lg" href="#about">Mussum Ipsum, cacilds!</a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="col-lg-12">
-            <div class="cards-compra">
-                <article class="col-lg-4">
-                    <div class="card-compra">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="image-prdt-compra">
-                                    <i class="material-icons">&#xE873;</i>
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <h2>Artigos</h2>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <article class="col-lg-4">
-                    <div class="card-compra">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="image-prdt-compra">
-                                    <i class="material-icons">&#xE0BE;</i>
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <h2>E-mail</h2>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <article class="col-lg-4">
-                    <div class="card-compra">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="image-prdt-compra">
-                                    <i class="material-icons">&#xE865;</i>                                    
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <h2>Ebook</h2>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>About Section</h1>
                 </div>
             </div>
         </div>
@@ -188,7 +126,326 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Services Section</h1>
+                    <div class="title-vertical">
+                        <h2 class="title-fine">Nossos Principais Serviços</h2>
+                    </div>
+                    <div class="row">
+                        <div class="all-services-format-logo">
+                            <div class="col-lg-4 text-center">
+                                <div class="services-format-logo">
+                                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                </div>
+                                <span class="services-format-desc">Artigos</span>
+                                <div class="text-services">
+                                    <p>Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent Admodum accumsan disputationi eu sit.</p>
+                                    <a href="" class="btn btn-primary">Compra rápida</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 text-center">
+                                <div class="services-format-logo">
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                </div>
+                                <span class="services-format-desc">E-mail</span>
+                                <div class="text-services">
+                                    <p>Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent Admodum accumsan disputationi eu sit.</p>
+                                    <a href="" class="btn btn-primary">Compra rápida</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 text-center">
+                                <div class="services-format-logo">
+                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                </div>
+                                <span class="services-format-desc">Ebook</span>
+                                <div class="text-services">
+                                    <p>Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent Admodum accumsan disputationi eu sit.</p>
+                                    <a href="" class="btn btn-primary">Compra rápida</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <a href="#">Conheça todos nossos serviços...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compra Rápida -->
+    <section id="compra-rapida" class="about-section">
+        <div class="container">
+            <div class="title-vertical text-left">
+                <h2 class="title-fine"><strong>Compre agora</strong><br>seu pacote personalizado!</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Artigos -->
+                    <div class="big-card">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="img-side">
+                                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="desc-side">
+                                    <h3>Artigos para blog</h3>
+                                    <h4 class="preco-card">R$ 27,00</h4>
+                                    <p>Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. in elementis mé pra quem é amistosis quis leo.</p>
+                                    <form class="form-horizontal">
+                                        <div>
+                                            <div class="form-group"> 
+                                                <div class="col-sm-12">
+                                                    <div class="checkbox">
+                                                        <label><input type="checkbox"> Incluir cupom de <strong>desconto</strong></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="palavras">Palavras</label>
+                                                    <div class="input-group spinner">
+                                                        <input type="text" class="form-control" value="500" id="palavras">
+                                                        <div class="input-group-btn-vertical">
+                                                            <button data-target="palavras" class="btn btn-default" type="button">
+                                                                <i class="fa fa-caret-up"></i>
+                                                            </button>
+                                                            <button data-target="palavras" class="btn btn-default" type="button">
+                                                                <i class="fa fa-caret-down"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="quantidade">Quantidade</label>
+                                                    <div class="input-group spinner">
+                                                        <input type="text" class="form-control" value="1" id="quantidade">
+                                                        <div class="input-group-btn-vertical">
+                                                            <button data-target="quantidade" class="btn btn-default" type="button">
+                                                                <i class="fa fa-caret-up"></i>
+                                                            </button>
+                                                            <button data-target="quantidade" class="btn btn-default" type="button">
+                                                                <i class="fa fa-caret-down"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="quantidade">Publicação</label>
+                                                    <div>
+                                                        <input type="checkbox" checked data-toggle="toggle" data-on="Sim" data-off="Não" data-onstyle="primary" data-offstyle="danger" data-width="100">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="quantidade">Imagem</label>
+                                                    <div>
+                                                        <input type="checkbox" checked data-toggle="toggle" data-on="Sim" data-off="Não" data-onstyle="primary" data-offstyle="danger" data-width="100">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="big-card-actions">
+                                                <a href="" class="btn btn-primary btn-lg">Adicionar ao Carrinho <i class="fa fa-cart-plus right" aria-hidden="true"></i></a>
+                                                <a href="">Adquira seu cupom de desconto aqui</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Email -->
+                    <div class="big-card">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="desc-side">
+                                    <h3>E-mail</h3>
+                                    <h4 class="preco-card">R$ 50,00</h4>
+                                    <p>Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. in elementis mé pra quem é amistosis quis leo.</p>
+                                    <form class="form-horizontal">
+                                        <div>
+                                            <div class="form-group"> 
+                                                <div class="col-sm-12">
+                                                    <div class="checkbox">
+                                                        <label><input type="checkbox"> Incluir cupom de <strong>desconto</strong></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="palavras">E-mails</label>
+                                                    <div class="input-group spinner">
+                                                        <input type="text" class="form-control" value="1" id="palavras">
+                                                        <div class="input-group-btn-vertical">
+                                                            <button data-target="palavras" class="btn btn-default" type="button">
+                                                                <i class="fa fa-caret-up"></i>
+                                                            </button>
+                                                            <button data-target="palavras" class="btn btn-default" type="button">
+                                                                <i class="fa fa-caret-down"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="quantidade">Quantidade</label>
+                                                    <div class="input-group spinner">
+                                                        <input type="text" class="form-control" value="1" id="quantidade">
+                                                        <div class="input-group-btn-vertical">
+                                                            <button data-target="quantidade" class="btn btn-default" type="button">
+                                                                <i class="fa fa-caret-up"></i>
+                                                            </button>
+                                                            <button data-target="quantidade" class="btn btn-default" type="button">
+                                                                <i class="fa fa-caret-down"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="big-card-actions">
+                                                <a href="" class="btn btn-primary btn-lg">Adicionar ao Carrinho <i class="fa fa-cart-plus right" aria-hidden="true"></i></a>
+                                                <a href="">Adquira seu cupom de desconto aqui</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="img-side">
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ebook -->
+                    <div class="big-card">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="img-side">
+                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="desc-side">
+                                    <h3>Ebook</h3>
+                                    <h4 class="preco-card">R$ 30,00</h4>
+                                    <p>Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. in elementis mé pra quem é amistosis quis leo.</p>
+                                    <form class="form-horizontal">
+                                        <div>
+                                            <div class="form-group"> 
+                                                <div class="col-sm-12">
+                                                    <div class="checkbox">
+                                                        <label><input type="checkbox"> Incluir cupom de <strong>desconto</strong></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="palavras">Páginas</label>
+                                                    <div class="input-group spinner">
+                                                        <input type="text" class="form-control" value="1" id="palavras">
+                                                        <div class="input-group-btn-vertical">
+                                                            <button data-target="palavras" class="btn btn-default" type="button">
+                                                                <i class="fa fa-caret-up"></i>
+                                                            </button>
+                                                            <button data-target="palavras" class="btn btn-default" type="button">
+                                                                <i class="fa fa-caret-down"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="quantidade">Quantidade</label>
+                                                    <div class="input-group spinner">
+                                                        <input type="text" class="form-control" value="1" id="quantidade">
+                                                        <div class="input-group-btn-vertical">
+                                                            <button data-target="quantidade" class="btn btn-default" type="button">
+                                                                <i class="fa fa-caret-up"></i>
+                                                            </button>
+                                                            <button data-target="quantidade" class="btn btn-default" type="button">
+                                                                <i class="fa fa-caret-down"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="big-card-actions">
+                                                <a href="" class="btn btn-primary btn-lg">Adicionar ao Carrinho <i class="fa fa-cart-plus right" aria-hidden="true"></i></a>
+                                                <a href="">Adquira seu cupom de desconto aqui</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quem somos -->
+    <section id="quem-somos" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-right">
+                    <div class="title-vertical">
+                        <h2 class="title-fine">Sobre nós...</h2>
+                    </div>
+                    <ul id="timeline" class="pull-right">
+                        <li>Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Diuretics paradis num copo é motivis de denguis.</li>
+                        <li>Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis!</li>
+                        <li>Cevadis im ampola pa arma uma pindureta. Manduma pindureta quium dia nois paga. Quem manda na minha terra sou Euzis! Atirei o pau no gatis, per gatis num morreus.</li>
+                        <li>Quem num gosta di mé, boa gente num é. in elementis mé pra quem é amistosis quis leo. Per aumento de cachacis, eu reclamis. Leite de capivaris, leite de mula manquis.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cupom de desconto -->
+    <section class="section-colored" data-speed="10">
+        <div class="container">
+            <div class="row vertical-align">
+                <div class="col-lg-8 text-left">
+                    <h2>Encante-se com a Agência Palandi</h2>
+                    <h4>e aproveite o desconto de 50% no primeiro artigo!</h4>
+                </div>
+                <div class="col-lg-4">
+                    <a href="" class="btn btn-lg btn-transparent">Quero meu cupom de desconto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Últimas do blog -->
+    <section id="ultimas-blog" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="title-fine">Últimas do blog</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O que estão falando -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="title-fine">O que estão falando da Agência Palandi?</h2>
                 </div>
             </div>
         </div>
@@ -197,13 +454,123 @@
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
+            <div class="title-vertical text-left">
+                <h2 class="title-fine">Vamos conversar?</h2>
+            </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Contact Section</h1>
+                    <div class="big-card">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="contact-form">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <form name="sentMessage" id="contactForm" novalidate>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Seu Nome *" id="name" required data-validation-required-message="Please enter your name.">
+                                                            <p class="help-block text-danger"></p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="email" class="form-control" placeholder="Seu E-mail *" id="email" required data-validation-required-message="Please enter your email address.">
+                                                            <p class="help-block text-danger"></p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="tel" class="form-control" placeholder="Seu Telefone" id="phone">
+                                                            <p class="help-block text-danger"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <textarea class="form-control" placeholder="Sua Mensagem" id="message"></textarea>
+                                                            <p class="help-block text-danger"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                    <div class="col-lg-12 text-center">
+                                                        <div id="success"></div>
+                                                        <button type="submit" class="btn send-mesnagem btn-primary">Enviar Mensagem</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="right-side-contact">
+                                    <h3>Informações de Contato</h3>
+                                    <ul class="contact-info">
+                                        <li><i class="fa fa-envelope" aria-hidden="true"></i><span><a href="" alt="">atendimento@agenciapalandi.com</a></span></li>
+                                        <li><i class="fa fa-whatsapp" aria-hidden="true"></i><span>(11) 93802-8008</span></li>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><span>(11) 3280-3802</span></li>
+                                    </ul>
+                                    <ul class="redes-info">
+                                        <li>
+                                            <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><i class="fa fa-skype" aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="newsletter" class="section-colored" data-speed="15">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="input-group">
+                        <label class="title-fine" for="emailNewsletter">Assine nossa newsletter!</label>
+                        <h5>Fique por dentro dos post fresquinhos ;)</h5>
+                    </div>
+                    <div class="input-group input-group-lg">
+                        <input type="email" class="form-control" placeholder="Deixe seu melhor e-mail, por favor" id="emailNewsletter">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button">Se Inscrever<i class="fa fa-paper-plane-o right" aria-hidden="true"></i></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3>Teste Coluna 1</h3>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Teste Coluna 2</h3>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Teste Coluna 3</h3>
+                </div>
+            </div>
+        </div>
+        <div id="pos-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="col-lg-6">
+                            <p>© 2017 Agência Palandi. Todos os direitos reservados.</p>
+                        </div>
+                        <div class="col-lg-6 text-right">
+                            <p>Só podia ser <a href="https://sistemasglobal.com.br">Sistemas Global</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -215,6 +582,7 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
 
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 </body>
 
 </html>
