@@ -81,7 +81,8 @@ of those sections to manage the look and feel of the site. */
     text-align: center;
     height: 800px;
 }
-.intro-section h1 {
+.intro-section h1,
+.intro-intern-section h1 {
     font-size: 66px;
     text-transform: uppercase;
     font-weight: 100;
@@ -574,4 +575,9 @@ footer ul li {
         padding-left: 0;
         margin-left: 0;
     }
+}
+.intro-intern-section {
+    padding-top: 175px!important;
+    text-align: center;
+    height: 450px;
 }
