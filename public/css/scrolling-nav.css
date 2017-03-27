@@ -35,6 +35,7 @@ ul {
 
     .navbar-collapse .btn {
         margin-left: 20px;
+        margin-top: 11px;
     }
     .navbar-brand {
         position: absolute;
@@ -120,12 +121,6 @@ of those sections to manage the look and feel of the site. */
     color: #fff;
     line-height: initial;
     border-bottom: solid 3px transparent;
-    padding-bottom: 7px;
-    padding-top: 7px;
-}
-.top-nav-collapse.navbar-default .navbar-nav>li>a {
-    padding-bottom: 30px;
-    padding-top: 11px;
 }
 .btn-transparent {
     color: #fff;
@@ -318,7 +313,7 @@ footer {
 #timeline li {
     text-align: right;
     border-right: solid 3px #005170;
-    padding: 30px 50px 0 0;
+    padding: 65px 65px 0 0;
     position: relative;
 }
 #timeline li:after {
@@ -326,16 +321,15 @@ footer {
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
-
     position: absolute;
-    right: -25px;
+    right: -45px;
     text-align: center;
-    top: 25px;
-    font-size: 20px;
-    line-height: 50px;
+    top: 40px;
+    font-size: 32px;
+    line-height: 85px;
     color: #fff;
-    width: 50px;
-    height: 50px;
+    width: 85px;
+    height: 85px;
     background: #005170;
     border-radius: 100%;
 }
@@ -580,4 +574,12 @@ footer ul li {
     padding-top: 175px!important;
     text-align: center;
     height: 450px;
+}
+#map {
+    background-image: url('https://www.wired.com/wp-content/uploads/2016/11/GoogleMap-1-1200x630-e1479510841629.jpg');
+    background-size: cover;
+    height: 300px;
+}
+.padding-top-none {
+    padding-top: 0!important;
 }
