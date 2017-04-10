@@ -22,6 +22,8 @@
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -34,6 +36,15 @@
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -57,7 +68,7 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="sobre-nos.html">Sobre Nós</a>
+                        <a href="sobre.html">Sobre Nós</a>
                     </li>
                     <li class="active">
                         <a href="#">Serviços</a>
@@ -92,11 +103,11 @@
     </nav>
 
     <!-- Intro Section -->
-    <section id="intro" class="section-colored intro-intern-section" data-speed="4">
+    <section id="intro" class="section-colored intro-intern-section bgParallax" data-speed="5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h1>Serviços</h1>
+                    <h1 class="wow fadeInDown">Serviços</h1>
                 </div>
             </div>
         </div>
@@ -108,7 +119,7 @@
             <div class="title-vertical text-left">
                 <div class="row">
                     <div class="all-services-format-logo">
-                        <div class="col-lg-4 text-center">
+                        <div class="col-lg-4 text-center wow zoomIn">
                             <div class="services-format-logo">
                                 <i class="fa fa-file-text-o" aria-hidden="true"></i>
                             </div>
@@ -119,7 +130,7 @@
                                 <a href="mailto:atendimento@agenciapalandi.com?subject=Eu%20Quero%20Texto%20Institucional" class="btn btn-primary">Eu Quero</a>
                             </div>
                         </div>
-                        <div class="col-lg-4 text-center">
+                        <div class="col-lg-4 text-center wow zoomIn">
                             <div class="services-format-logo">
                                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
                             </div>
@@ -130,7 +141,7 @@
                                 <a href="mailto:atendimento@agenciapalandi.com?subject=Eu%20Quero%20Artigo%20de%20vendas%20(Pre-sell)" class="btn btn-primary">Eu Quero</a>
                             </div>
                         </div>
-                        <div class="col-lg-4 text-center">
+                        <div class="col-lg-4 text-center wow zoomIn">
                             <div class="services-format-logo">
                                 <i class="fa fa-book" aria-hidden="true"></i>
                             </div>
@@ -145,7 +156,7 @@
                 </div>
                 <div class="row">
                     <div class="all-services-format-logo">
-                        <div class="col-lg-4 text-center">
+                        <div class="col-lg-4 text-center wow zoomIn">
                             <div class="services-format-logo">
                                 <i class="fa fa-file-text-o" aria-hidden="true"></i>
                             </div>
@@ -156,7 +167,7 @@
                                 <a href="mailto:atendimento@agenciapalandi.com?subject=Eu%20Quero%20Posts%20para%20Facebook" class="btn btn-primary">Eu Quero</a>
                             </div>
                         </div>
-                        <div class="col-lg-4 text-center">
+                        <div class="col-lg-4 text-center wow zoomIn">
                             <div class="services-format-logo">
                                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
                             </div>
@@ -167,7 +178,7 @@
                                 <a href="mailto:atendimento@agenciapalandi.com?subject=Eu%20Quero%20Conteúdo%20para%20Landing%20Page" class="btn btn-primary">Eu Quero</a>
                             </div>
                         </div>
-                        <div class="col-lg-4 text-center">
+                        <div class="col-lg-4 text-center wow zoomIn">
                             <div class="services-format-logo">
                                 <i class="fa fa-book" aria-hidden="true"></i>
                             </div>
@@ -182,7 +193,7 @@
                 </div>
                 <div class="row">
                     <div class="all-services-format-logo">
-                        <div class="col-lg-4 text-center">
+                        <div class="col-lg-4 text-center wow zoomIn">
                             <div class="services-format-logo">
                                 <i class="fa fa-file-text-o" aria-hidden="true"></i>
                             </div>
@@ -193,7 +204,7 @@
                                 <a href="mailto:atendimento@agenciapalandi.com?subject=Eu%20Quero%20Revisão" class="btn btn-primary">Eu Quero</a>
                             </div>
                         </div>
-                        <div class="col-lg-4 text-center">
+                        <div class="col-lg-4 text-center wow zoomIn">
                             <div class="services-format-logo">
                                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
                             </div>
@@ -204,7 +215,7 @@
                                 <a href="mailto:atendimento@agenciapalandi.com?subject=Eu%20Quero%20Release" class="btn btn-primary">Eu Quero</a>
                             </div>
                         </div>
-                        <div class="col-lg-4 text-center">
+                        <div class="col-lg-4 text-center wow zoomIn">
                             <div class="services-format-logo">
                                 <i class="fa fa-book" aria-hidden="true"></i>
                             </div>
@@ -219,7 +230,7 @@
                 </div>
                 <div class="row">
                     <div class="all-services-format-logo">
-                        <div class="col-lg-4 text-center">
+                        <div class="col-lg-4 text-center wow zoomIn">
                             <div class="services-format-logo">
                                 <i class="fa fa-file-text-o" aria-hidden="true"></i>
                             </div>
@@ -230,7 +241,7 @@
                                 <a href="mailto:atendimento@agenciapalandi.com?subject=Eu%20Quero%20Texto%20para%20Linkedin" class="btn btn-primary">Eu Quero</a>
                             </div>
                         </div>
-                        <div class="col-lg-4 text-center">
+                        <div class="col-lg-4 text-center wow zoomIn">
                             <div class="services-format-logo">
                                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
                             </div>
@@ -241,7 +252,7 @@
                                 <a href="mailto:atendimento@agenciapalandi.com?subject=Eu%20Quero%20Texto%20para%20Twitter" class="btn btn-primary">Eu Quero</a>
                             </div>
                         </div>
-                        <div class="col-lg-4 text-center">
+                        <div class="col-lg-4 text-center wow zoomIn">
                             <div class="services-format-logo">
                                 <i class="fa fa-book" aria-hidden="true"></i>
                             </div>
@@ -256,7 +267,7 @@
                 </div>
                 <div class="row">
                     <div class="all-services-format-logo">
-                        <div class="col-lg-4 text-center">
+                        <div class="col-lg-4 text-center wow zoomIn">
                             <div class="services-format-logo">
                                 <i class="fa fa-file-text-o" aria-hidden="true"></i>
                             </div>
@@ -267,7 +278,7 @@
                                 <a href="mailto:atendimento@agenciapalandi.com?subject=Eu%20Quero%20Tradução" class="btn btn-primary">Eu Quero</a>
                             </div>
                         </div>
-                        <div class="col-lg-4 text-center">
+                        <div class="col-lg-4 text-center wow zoomIn">
                             <div class="services-format-logo">
                                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
                             </div>
@@ -285,15 +296,15 @@
     </section>
 
     <!-- Cupom de desconto -->
-    <section class="section-colored" data-speed="10">
+    <section class="section-colored bgParallax" data-speed="2">
         <div class="container">
             <div class="row vertical-align">
                 <div class="col-lg-8 text-left">
-                    <h2>Encante-se com a Agência Palandi</h2>
-                    <h4>e aproveite o desconto de 50% no primeiro artigo!</h4>
+                    <h2 class="wow fadeInUp">Encante-se com a Agência Palandi</h2>
+                    <h4 class="wow fadeInUp" data-wow-delay=".5s">e aproveite o desconto de 50% no primeiro artigo!</h4>
                 </div>
                 <div class="col-lg-4">
-                    <a href="" class="btn btn-lg btn-transparent">Quero meu cupom de desconto</a>
+                    <a href="" class="btn btn-lg btn-transparent wow tada" data-wow-delay="1s">Quero meu cupom de desconto</a>
                 </div>
             </div>
         </div>
@@ -303,7 +314,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-2 wow fadeInDown">
                     <h3>Quem somos</h3>
                     <ul>
                         <li>
@@ -317,7 +328,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 wow fadeInDown" data-wow-delay=".5s">
                     <h3>Links Úteis</h3>
                     <ul>
                         <li>
@@ -331,7 +342,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 wow fadeInDown" data-wow-delay="1s">
                     <h3>Vamos ajudá-lo!</h3>
                     <ul>
                         <li>
@@ -345,8 +356,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-5">
-                    <img src="img/print-facebook.png" alt="" class="img-responsive">
+                <div class="col-lg-5 wow fadeInDown" data-wow-delay="1.5s">
+                    <div class="fb-page" data-href="https://facebook.com/agenciapalandi/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://facebook.com/agenciapalandi/" class="fb-xfbml-parse-ignore"><a href="https://facebook.com/agenciapalandi/">Agência Palandi</a></blockquote></div>
                 </div>
             </div>
             <!--/.row--> 
@@ -367,6 +378,10 @@
         </div>
     </footer>
 
+    <a href="#page-top" class="page-scroll" id="to-top">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -375,9 +390,12 @@
 
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
 
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script src="js/scrolling-nav.js"></script>
 </body>
 
 </html>

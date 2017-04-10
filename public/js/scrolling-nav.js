@@ -5,6 +5,12 @@ $(window).scroll(function() {
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
+
+    if ($(".navbar").offset().top > 150) {
+        $('#to-top').addClass('active');
+    } else {
+        $('#to-top').removeClass('active');
+    }
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -32,23 +38,11 @@ $('.bgParallax').each(function(){
     }); 
 });
 
-(function ($) {
-  $('.spinner .btn:first-of-type').on('click', function() {
-    $('.spinner input#'+$(this).attr('data-target')).val( parseInt($('.spinner input').val(), 10) + 1);
-  });
-  $('.spinner .btn:last-of-type').on('click', function() {
-    $('.spinner input#'+$(this).attr('data-target')).val( parseInt($('.spinner input').val(), 10) - 1);
-  });
-})(jQuery);
+$('#carousel-depoimentos').carousel({
+  interval: 5000
+})
 
-// Instantiate the Bootstrap carousel
-$('.multi-item-carousel').carousel({
-  interval: false
-});
-
-// for every slide in carousel, copy the next slide's item in the slide.
-// Do the same for the next, next item.
-$('.multi-item-carousel .item').each(function(){
+$('.carousel .item').each(function(){
   var next = $(this).next();
   if (!next.length) {
     next = $(this).siblings(':first');
@@ -57,7 +51,10 @@ $('.multi-item-carousel .item').each(function(){
   
   if (next.next().length>0) {
     next.next().children(':first-child').clone().appendTo($(this));
-  } else {
+  }
+  else {
     $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
   }
 });
+
+new WOW().init();

@@ -22,6 +22,8 @@
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -34,6 +36,15 @@
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -92,11 +103,11 @@
     </nav>
 
     <!-- Intro Section -->
-    <section id="intro" class="section-colored intro-intern-section" data-speed="4">
+    <section id="intro" class="section-colored intro-intern-section bgParallax" data-speed="5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h1>Sobre Nós</h1>
+                    <h1 class="wow fadeInDown">Sobre Nós</h1>
                 </div>
             </div>
         </div>
@@ -108,13 +119,13 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-left">
-                        <h2 class="title-fine"><strong>Quem é a Agência Palandi?</strong><br>Conheça um pouco mais sobre nós!</h2>
+                        <h2 class="title-fine wow fadeIn"><strong>Quem é a Agência Palandi?</strong><br>Conheça um pouco mais sobre nós!</h2>
                     </div>
                 </div>
             </div>
             <br><br>
             <div class="row">
-                <div class="col-lg-12 text-left">
+                <div class="col-lg-12 text-left wow fadeInLeft">
                     <p>
                         A Agência Palandi é referência em Marketing de Conteúdo no Brasil, sendo a escolha de milhares de empreendedores para a produção de artigos para blog, e-books e e-mails. A história é longa: tudo começou em 2009, quando o Victor Palandi iniciou seu trabalho como blogueiro. Vendo que tinha desenvoltura para a escrita, investiu mais de seu tempo, trabalhando também como redator Freelancer. Após ter criado mais de 40 blogs e ter escrito milhares de artigos, a empresa nasceu, em 2013.
                     </p>
@@ -131,14 +142,14 @@
     </section>
     
     <!-- Newsletter -->
-    <section id="newsletter" class="section-colored" data-speed="15">
+    <section id="newsletter" class="section-colored bgParallax" data-speed="2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="input-group">
-                        <label class="title-fine" for="emailNewsletter">Receba Nossos E-mails e Promoções Exclusivas</label>
+                        <label class="title-fine wow fadeInDown" for="emailNewsletter">Receba Nossos E-mails e Promoções Exclusivas</label>
                     </div>
-                    <div class="input-group input-group-lg">
+                    <div class="input-group input-group-lg wow fadeInUp">
                         <input type="email" class="form-control" placeholder="Deixe aqui o seu melhor e-mail" id="emailNewsletter">
                         <span class="input-group-btn">
                             <button class="btn btn-primary" type="button">Eu Quero!</button>
@@ -153,7 +164,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-2 wow fadeInDown">
                     <h3>Quem somos</h3>
                     <ul>
                         <li>
@@ -167,7 +178,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 wow fadeInDown" data-wow-delay=".5s">
                     <h3>Links Úteis</h3>
                     <ul>
                         <li>
@@ -181,7 +192,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 wow fadeInDown" data-wow-delay="1s">
                     <h3>Vamos ajudá-lo!</h3>
                     <ul>
                         <li>
@@ -195,8 +206,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-5">
-                    <img src="img/print-facebook.png" alt="" class="img-responsive">
+                <div class="col-lg-5 wow fadeInDown" data-wow-delay="1.5s">
+                    <div class="fb-page" data-href="https://facebook.com/agenciapalandi/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://facebook.com/agenciapalandi/" class="fb-xfbml-parse-ignore"><a href="https://facebook.com/agenciapalandi/">Agência Palandi</a></blockquote></div>
                 </div>
             </div>
             <!--/.row--> 
@@ -217,6 +228,10 @@
         </div>
     </footer>
 
+    <a href="#page-top" class="page-scroll" id="to-top">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -225,9 +240,12 @@
 
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
 
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script src="js/scrolling-nav.js"></script>
 </body>
 
 </html>

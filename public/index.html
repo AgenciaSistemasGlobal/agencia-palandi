@@ -22,18 +22,28 @@
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -53,15 +63,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
                     <li class="active">
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="sobre-nos.html">Sobre Nós</a>
+                        <a href="sobre.html">Sobre Nós</a>
                     </li>
                     <li>
                         <a href="servicos.html">Serviços</a>
@@ -70,7 +76,7 @@
                         <a href="parcerias.html">Parcerias</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Blog</a>
+                        <a class="page-scroll" href="#ultimas-blog">Blog</a>
                     </li>
                     <li>
                         <a href="trabalhe-conosco.html">Trabalhe Conosco</a>
@@ -96,16 +102,16 @@
     </nav>
 
     <!-- Intro Section -->
-    <section id="intro" class="section-colored intro-section" data-speed="4">
+    <section id="intro" class="section-colored intro-section bgParallax" data-speed="5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h1>Bem-vindo à Agência Palandi!</h1>
+                    <h1 class="wow fadeInDown">Bem-vindo à Agência Palandi!</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <p>Mi casa, su casa! Sinta-se à vontade, conheça mais sobre o nosso trabalho e invista em conteúdo com quem entende e sabe de suas necessidades. =)</p>
+                    <p class="wow fadeInUp" data-wow-delay=".5s">Mi casa, su casa! Sinta-se à vontade, conheça mais sobre o nosso trabalho e invista em conteúdo com quem entende e sabe de suas necessidades. =)</p>
                 </div>
             </div>
             <br><br><br>
@@ -113,14 +119,21 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="row">
                         <div class="col-lg-6 text-right">
-                            <a class="btn btn-transparent page-scroll btn-lg" href="#services">Serviços</a>
+                            <a class="btn btn-transparent page-scroll btn-lg wow fadeInLeft" data-wow-delay="1s" href="#services">Serviços</a>
                         </div>
                         <div class="col-lg-6 text-left">
-                            <a class="btn btn-primary page-scroll btn-lg" href="#compra-rapida">Compra Rápida</a>
+                            <a class="btn btn-primary page-scroll btn-lg wow fadeInRight" data-wow-delay="1.5s" href="#compra-rapida">Compra Rápida</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <span class="scroll-btn">
+                <a href="#services" class="page-scroll">
+                    <span class="mouse">
+                        <span></span>
+                    </span>
+                </a>
+            </span>
         </div>
     </section>
 
@@ -130,11 +143,11 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="title-vertical">
-                        <h2 class="title-fine">Nossos Principais Serviços</h2>
+                        <h2 class="title-fine wow fadeInDown">Nossos Principais Serviços</h2>
                     </div>
                     <div class="row">
                         <div class="all-services-format-logo">
-                            <div class="col-lg-4 text-center">
+                            <div class="col-lg-4 text-center wow fadeInLeft">
                                 <div class="services-format-logo">
                                     <i class="fa fa-file-text-o" aria-hidden="true"></i>
                                 </div>
@@ -145,7 +158,7 @@
                                     <a href="" class="btn btn-primary">Compra rápida</a>
                                 </div>
                             </div>
-                            <div class="col-lg-4 text-center">
+                            <div class="col-lg-4 text-center wow fadeInUp" data-wow-delay=".5s">
                                 <div class="services-format-logo">
                                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                 </div>
@@ -156,7 +169,7 @@
                                     <a href="" class="btn btn-primary">Compra rápida</a>
                                 </div>
                             </div>
-                            <div class="col-lg-4 text-center">
+                            <div class="col-lg-4 text-center wow fadeInRight" data-wow-delay="1s">
                                 <div class="services-format-logo">
                                     <i class="fa fa-book" aria-hidden="true"></i>
                                 </div>
@@ -170,7 +183,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-12 wow bounceIn" data-wow-delay="1.5s">
                             <a href="servicos.html">Conheça todos nossos serviços</a>
                         </div>
                     </div>
@@ -183,12 +196,12 @@
     <section id="compra-rapida" class="about-section">
         <div class="container">
             <div class="title-vertical text-center">
-                <h2 class="title-fine"><strong>Invista Agora em Conteúdo!</strong><br>Monte o seu pacote abaixo:</h2>
+                <h2 class="title-fine wow fadeInDown"><strong>Invista Agora em Conteúdo!</strong><br>Monte o seu pacote abaixo:</h2>
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <!-- Artigos -->
-                    <div class="big-card">
+                    <div class="big-card wow zoomIn">
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="img-side">
@@ -268,7 +281,7 @@
                         </div>
                     </div>
                     <!-- Email -->
-                    <div class="big-card">
+                    <div class="big-card wow zoomIn">
                         <div class="row">
                             <div class="col-lg-8">
                                 <div class="desc-side">
@@ -332,7 +345,7 @@
                         </div>
                     </div>
                     <!-- Ebook -->
-                    <div class="big-card">
+                    <div class="big-card wow zoomIn">
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="img-side">
@@ -406,20 +419,20 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="title-vertical">
-                        <h2 class="title-fine">Sobre nós</h2>
+                        <h2 class="title-fine wow fadeInDown">Sobre nós</h2>
                     </div>
                     <ul id="timeline" class="pull-right">
-                        <li>
+                        <li class="wow fadeInRight">
                             <span>
                                 A Agência Palandi é referência em Marketing de Conteúdo no Brasil, sendo a escolha de milhares de empreendedores para a produção de artigos para blog, e-books e e-mails. A história é longa: tudo começou em 2009, quando o Victor Palandi iniciou seu trabalho como blogueiro. Vendo que tinha desenvoltura para a escrita, investiu mais de seu tempo, trabalhando também como redator Freelancer. Após ter criado mais de 40 blogs e ter escrito milhares de artigos, a empresa nasceu, em 2013.
                             </span>
                         </li>
-                        <li>
+                        <li class="wow fadeInRight" data-wow-delay=".5s">
                             <span>
                                 Rapidamente, com a ajuda de profissionais capacitados, ela se destacou. E o seu grande diferencial é entender o que o cliente busca. Por exemplo, todos os artigos são otimizados (SEO), para melhor posicionamento no Google. Além disso, a conversão sempre é levada em conta, seja de produto físico ou infoproduto. Por esse motivo, ela produz reviews e artigos de topo, meio e fim de funil.
                             </span>
                         </li>
-                        <li>
+                        <li class="wow fadeInRight" data-wow-delay="1s">
                             <span>
                                 Mais do que isso, a Agência Palandi sabe que o tempo não para. Logo, os prazos são extremamente flexíveis, para se encaixarem no cronograma de publicação do profissional que a contrata.
                                 Em meio à crise, a internet é uma das melhores amigas no trabalho de marketing e vendas. Deixe que a Agência Palandi esteja ao seu lado nesta jornada!
@@ -432,15 +445,15 @@
     </section>
 
     <!-- Cupom de desconto -->
-    <section class="section-colored" data-speed="10">
+    <section class="section-colored bgParallax" data-speed="2">
         <div class="container">
             <div class="row vertical-align">
                 <div class="col-lg-8 text-left">
-                    <h2>Encante-se com a Agência Palandi</h2>
-                    <h4>e aproveite o desconto de 50% no primeiro artigo!</h4>
+                    <h2 class="wow fadeInUp">Encante-se com a Agência Palandi</h2>
+                    <h4 class="wow fadeInUp" data-wow-delay=".5s">e aproveite o desconto de 50% no primeiro artigo!</h4>
                 </div>
                 <div class="col-lg-4">
-                    <a href="" class="btn btn-lg btn-transparent">Quero meu cupom de desconto</a>
+                    <a href="" class="btn btn-lg btn-transparent wow tada" data-wow-delay="1s">Quero meu cupom de desconto</a>
                 </div>
             </div>
         </div>
@@ -452,10 +465,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="title-vertical text-center">
-                        <h2 class="title-fine">Últimas do blog</h2>
+                        <h2 class="title-fine wow fadeInDown">Últimas do blog</h2>
                     </div>
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 wow fadeInUp">
                             <div class="card-vert">
                                 <header>
                                     <img src="http://lorempixel.com/360/200/business/" alt="" class="img-responsive">
@@ -469,7 +482,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 wow fadeInUp" data-wow-delay=".5s">
                             <div class="card-vert">
                                 <header>
                                     <img src="http://lorempixel.com/360/200/business/" alt="" class="img-responsive">
@@ -483,7 +496,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 wow fadeInUp" data-wow-delay="1s">
                             <div class="card-vert">
                                 <header>
                                     <img src="http://lorempixel.com/360/200/business/" alt="" class="img-responsive">
@@ -499,7 +512,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="wow bounceIn col-lg-12" data-wow-delay="1.5s">
                             <a href="#">Visite nosso blog</a>
                         </div>
                     </div>
@@ -514,107 +527,144 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="title-vertical text-center">
-                        <h2 class="title-fine">O que estão falando da<br>Agência Palandi?</h2>
+                        <h2 class="title-fine wow fadeInDown">O que estão falando da<br>Agência Palandi?</h2>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 cols-com">
-                    <div class="big-card">
-                        <h4>Mussum Ipsum, cacilds vidis litro abertis</h4>
-                        <p>Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. in elementis mé pra quem é amistosis quis leo.</p>
-                        <hr>
-                        <div class="img-and-name">
-                            <img src="http://lorempixel.com/40/40/business/" alt="" class="img-responsive">
-                            <strong>Nome Exemplo</strong>
+        <div class="container-fluid wow fadeInDown">
+            <div class="carousel slide" id="carousel-depoimentos">
+                <ol id="selectors-feedback" class="carousel-indicators">
+                    <li data-target="#carousel-depoimentos" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-depoimentos" data-slide-to="1"></li>
+                    <li data-target="#carousel-depoimentos" data-slide-to="2"></li>
+                    <li data-target="#carousel-depoimentos" data-slide-to="3"></li>
+                    <li data-target="#carousel-depoimentos" data-slide-to="4"></li>
+                    <li data-target="#carousel-depoimentos" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="col-md-4 cols-com">
+                            <div class="big-card">
+                                <i class="fa fa-quote-left dest-depos" aria-hidden="true"></i>
+                                <p>Oi, querido Victor, boa tarde! Muito obrigada pelo super ágil e gentil feedback ao meu contato! Sem palavras! Essas atitudes é que fazem profissionais como vc, serem referenciais de excelência, integridade e exímio profissionalismo!!!</p>
+                                <div class="nome">
+                                    <p>
+                                        Giorgiana
+                                    </p>
+                                </div>
+                                <div class="profissao">
+                                    <p>
+                                        Profissional de Marketing
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <p>Mussum Ipsum, cacilds vidis litro abertis.</p>
                     </div>
-                </div>
-                <div class="col-lg-4 cols-com">
-                    <div class="big-card">
-                        <h4>Mussum Ipsum, cacilds vidis litro abertis</h4>
-                        <p>Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. in elementis mé pra quem é amistosis quis leo.</p>
-                        <hr>
-                        <div class="img-and-name">
-                            <img src="http://lorempixel.com/40/40/business/" alt="" class="img-responsive">
-                            <strong>Nome Exemplo</strong>
+                    <div class="item">
+                        <div class="col-md-4 cols-com">
+                            <div class="big-card">
+                                <i class="fa fa-quote-left dest-depos" aria-hidden="true"></i>
+                                <p>Victor P*** QUE PARIU !!!!! Você é muito foda cara. 
+                                Ficou excelente, faltou palavras aqui para descrever a qualidade do seu trabalho, é muito bom.
+                                Parabéns Victor muito mas muito agradecido</p>
+                                <div class="nome">
+                                    <p>
+                                        Sidney
+                                    </p>
+                                </div>
+                                <div class="profissao">
+                                    <p>
+                                        Músico Profissional
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <p>Mussum Ipsum, cacilds vidis litro abertis.</p>
                     </div>
-                </div>
-                <div class="col-lg-4 cols-com">
-                    <div class="big-card">
-                        <h4>Mussum Ipsum, cacilds vidis litro abertis</h4>
-                        <p>Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. in elementis mé pra quem é amistosis quis leo.</p>
-                        <hr>
-                        <div class="img-and-name">
-                            <img src="http://lorempixel.com/40/40/business/" alt="" class="img-responsive">
-                            <strong>Nome Exemplo</strong>
+                    <div class="item">
+                        <div class="col-md-4 cols-com">
+                            <div class="big-card">
+                                <i class="fa fa-quote-left dest-depos" aria-hidden="true"></i>
+                                <p>Qual foi minha surpresa? Amei, amei,amei!!! Seu texto, fiquei pensando, eu há três anos venho fazendo almofadas para crianças e não consegui colocar nas descrições nem a metade do conteúdo que você escreveu... </p>
+                                <div class="nome">
+                                    <p>
+                                        Elisama
+                                    </p>
+                                </div>
+                                <div class="profissao">
+                                    <p>
+                                        Artista
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <p>Mussum Ipsum, cacilds vidis litro abertis.</p>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul id="selectors-feedback">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <a href="#">E tem muito mais...</a>
+                    <div class="item">
+                        <div class="col-md-4 cols-com">
+                            <div class="big-card">
+                                <i class="fa fa-quote-left dest-depos" aria-hidden="true"></i>
+                                <p>Já recebi o artigo BOLO NO POTE, e ficou sensacional,
+                                parabéns Victor e toda sua equipe vocês são os melhores,
+                                agora é só publicar o artigo e vamos que vamos...</p>
+                                <div class="nome">
+                                    <p>
+                                        Anderson
+                                    </p>
+                                </div>
+                                <div class="profissao">
+                                    <p>
+                                        Afiliado Profissional
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-4 cols-com">
+                            <div class="big-card">
+                                <i class="fa fa-quote-left dest-depos" aria-hidden="true"></i>
+                                <p>Oi Victor, Tudo bom, mais ainda quando recebo os teus e-mails com “Super textos” hehe, obrigado por mais uma super redação :)</p>
+                                <div class="nome">
+                                    <p>
+                                        Derlis
+                                    </p>
+                                </div>
+                                <div class="profissao">
+                                    <p>
+                                        Designer
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-4 cols-com">
+                            <div class="big-card">
+                                <i class="fa fa-quote-left dest-depos" aria-hidden="true"></i>
+                                <p>Já ia me esquecendo fui para primeira pagina do Google no segundo dia com o mini site, show.</p>
+                                <div class="nome">
+                                    <p>
+                                        Leonardo
+                                    </p>
+                                </div>
+                                <div class="profissao">
+                                    <p>
+                                        Empreendedor Digital
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-
-
+        <br><br>
         <div class="container">
-        <h1>Use Bootstrap's carousel to show multiple items per slide.</h1>
-        <div class="row">
-        <div class="col-md-12">
-        <div class="carousel slide multi-item-carousel" id="theCarousel">
-        <div class="carousel-inner">
-        <div class="item active">
-        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-responsive"></a></div>
-        </div>
-        <div class="item">
-        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" class="img-responsive"></a></div>
-        </div>
-        <div class="item">
-        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/9c27b0/000000" class="img-responsive"></a></div>
-        </div>
-        <div class="item">
-        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/673ab7/000000" class="img-responsive"></a></div>
-        </div>
-        <div class="item">
-        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/4caf50/000000" class="img-responsive"></a></div>
-        </div>
-        <div class="item">
-        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
-        </div>
-        <!-- add  more items here -->
-        <!-- Example item start:  -->
-
-        <div class="item">
-        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
-        </div>
-
-        <!--  Example item end -->
-        </div>
-        <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-        <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-        </div>
-        </div>
-        </div>
+            <div class="row">
+                <div class="col-lg-12 wow bounceIn">
+                    <a href="http://agenciapalandi.com/desconto/">E tem muito mais...</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -622,11 +672,11 @@
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="title-vertical text-center">
-                <h2 class="title-fine">Vamos conversar?</h2>
+                <h2 class="title-fine wow fadeInDown">Vamos conversar?</h2>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="big-card">
+                    <div class="big-card wow bounceInUp">
                         <div class="row">
                             <div class="col-lg-8">
                                 <div class="contact-form">
@@ -661,7 +711,7 @@
                                                     <div class="clearfix"></div>
                                                     <div class="col-lg-12 text-center">
                                                         <div id="success"></div>
-                                                        <button type="submit" class="btn send-mesnagem btn-lg btn-primary">Enviar Mensagem</button>
+                                                        <button type="submit" class="btn send-mesnagem btn-lg btn-primary wow tada">Enviar Mensagem</button>
                                                     </div>
                                                 </div>
                                             </form>
@@ -695,14 +745,14 @@
     </section>
 
     <!-- Newsletter -->
-    <section id="newsletter" class="section-colored" data-speed="15">
+    <section id="newsletter" class="section-colored bgParallax" data-speed="2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="input-group">
-                        <label class="title-fine" for="emailNewsletter">Receba Nossos E-mails e Promoções Exclusivas</label>
+                        <label class="title-fine wow fadeInDown" for="emailNewsletter">Receba Nossos E-mails e Promoções Exclusivas</label>
                     </div>
-                    <div class="input-group input-group-lg">
+                    <div class="input-group input-group-lg wow fadeInUp">
                         <input type="email" class="form-control" placeholder="Deixe aqui o seu melhor e-mail" id="emailNewsletter">
                         <span class="input-group-btn">
                             <button class="btn btn-primary" type="button">Eu Quero!</button>
@@ -717,7 +767,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-2 wow fadeInDown">
                     <h3>Quem somos</h3>
                     <ul>
                         <li>
@@ -731,7 +781,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 wow fadeInDown" data-wow-delay=".5s">
                     <h3>Links Úteis</h3>
                     <ul>
                         <li>
@@ -745,7 +795,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 wow fadeInDown" data-wow-delay="1s">
                     <h3>Vamos ajudá-lo!</h3>
                     <ul>
                         <li>
@@ -759,8 +809,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-5">
-                    <img src="img/print-facebook.png" alt="" class="img-responsive">
+                <div class="col-lg-5 wow fadeInDown" data-wow-delay="1.5s">
+                    <div class="fb-page" data-href="https://facebook.com/agenciapalandi/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://facebook.com/agenciapalandi/" class="fb-xfbml-parse-ignore"><a href="https://facebook.com/agenciapalandi/">Agência Palandi</a></blockquote></div>
                 </div>
             </div>
             <!--/.row--> 
@@ -781,6 +831,10 @@
         </div>
     </footer>
 
+    <a href="#page-top" class="page-scroll" id="to-top">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -789,9 +843,12 @@
 
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
 
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script src="js/scrolling-nav.js"></script>
 </body>
 
 </html>
